@@ -1,10 +1,6 @@
 #pragma once
 #ifndef EVENT_H
 #define EVENT_H
-#include <iostream>
-#include <string>
-#include "Event.h"
-#include "Venue.h"
 
 using namespace std;
 

@@ -13,54 +13,48 @@ using namespace std;
 
 Venue::Venue() {
 	numEvents = 12;//size of array
-	scheduledEvents[numEvents];//make an array of 12
+	scheduledEvents[numEvents];
 }
 
-bool Venue::validTime(int time)
+bool Venue::validTime(int time)//use a loop to check all of array
 	{
-		if (scheduledEvents[time].getTime() != -1)
+		for (int i = 0; i < numEvents;i++)
 		{
-			return false;
+			if (scheduledEvents[i].getTime() == time)//if it finds a part that is the same as true,return false to addEvent function
+			{
+				return false;
+			}
 		}
-		else
-		{
-			return true;
-		}
+		return true;
 	}
 
 void Venue::addEvent(int time, string name) {
 	if (validTime(time) == true) //validate if the time is avaialble 
 	{
-		scheduledEvents[time-1].setTime(time);
-		scheduledEvents[time-1].setTitle(name);
-		cout << "Event scheduled!";
+		scheduledEvents[time-1].setTime(time);//since its avaible, set the time 
+		scheduledEvents[time-1].setTitle(name);//now set the same of the event
+		cout << "Event scheduled!"<<endl;
 	}
 	else
 	{
-		cout << "Couldn't schedule event.";
+		cout << "Couldn't schedule event :("<<endl;
 	}
 }
 
 Event Venue::findEvent(int time) {
-		return scheduledEvents[time-1];
+		return scheduledEvents[time-1];//subtract one to get correct slot and return that of the events
 
 }
 
-Event Venue::findEvent(string name) {
-	int count = 0;
-	while (name != scheduledEvents[count].getTitle() && (count <= 11))
+Event Venue::findEvent(string name) {//find the name of the event
+	int count = 0;//use a while loop to impliment count and 
+	while (name != scheduledEvents[count].getTitle() && count <=11 )//when it fits critera, leaves loop and outputs at that number
 	{
-		if (count != 11)
-		{
-			count++;
-		}
+		count++;
 	}
 	return scheduledEvents[count];
 }
 
-//for (int i = 0; i <= 11; i++)
-//{
-//	
-//}
+
 
 

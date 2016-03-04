@@ -9,6 +9,7 @@
 #include <string>
 #include "Event.h"
 #include "Venue.h"
+#include <vector>
 
 using namespace std;
 int main() {
