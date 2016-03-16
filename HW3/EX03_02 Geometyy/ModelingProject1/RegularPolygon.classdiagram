@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="525cc578-873e-494f-be8e-8a8d5d8784b7" name="RegularPolygon" linkedPackageId="60b094e4-b2a3-4be7-9be5-2d096c793daf" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="6e9b3793-e44d-4b5e-bc6d-308e21855dce">
+      <profileInstance Id="f345e9e8-8db0-4168-a2b1-774a31d9993e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="521f38c9-389d-4714-bc70-0565c96faa1a">
+      <profileInstance Id="0deb75c8-84a5-406e-ae3b-70dab79a50ce" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f5a473d2-4bb8-4ae6-8ef9-cf08e0d9b9d9" name="Regular Polygon" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="07e2c319-acc2-4ad9-a72f-802bfd8ef09c" />
+        <ownedAttributesInternal>
+          <property Id="3231f15f-2f8a-41e8-9a02-831ac43085bb" name="double  n" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4eb34dd9-ef20-4a3f-896e-4d61f8303f73" />
+          </property>
+          <property Id="329f1a8c-e296-486b-9030-f4cb7d31163f" name="double  side" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="32eef339-3d2c-4433-a6ec-1ea0f346cec4" />
+          </property>
+          <property Id="c0bd5505-291f-4fac-b772-5d199c09d256" name="double  x" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e7be0275-c80a-4f9b-9f47-e02676228cd0" />
+          </property>
+          <property Id="e910ff97-37de-4ad8-b928-cc6e319ab7b2" name="double  y" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1bcf4566-6513-4e5a-9b1e-b795a70a7b74" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="5eaa2496-b913-445e-9806-89d299d0cd08" name="double getPerimeter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="df9d10ee-246a-4ec7-b457-d9e07a12d498" />
+          </operation>
+          <operation Id="36bed3e3-ebed-4b03-9c1b-36668fabacbe" name="double getArea" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1f50920e-086e-4b0f-a160-0fced4f0d858" />
+          </operation>
+          <operation Id="42a66ba6-478f-4b76-92fc-402a38a959cd" name="double getN" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="aace8690-1c6d-4038-baf0-9df42c1819f3" />
+          </operation>
+          <operation Id="179f40a7-0f70-48ba-b1d1-e7fbfd5806a7" name="void setN" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1c94f94a-4ba1-46f4-a405-ba6c19d6f4b3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="172518d2-6b68-4ed5-bf98-0602c355d091" name="double n" direction="In" isUnique="false">
+                  <elementDefinition Id="89c0b9f7-faf2-4b51-991e-86644972004b" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="dd0225ec-1f3c-4324-b6a0-6bb34762cda8" name="double getSide" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d3e6e8de-a3f4-4cec-bda4-3ade18e3aea2" />
+          </operation>
+          <operation Id="92152fd7-6f60-4195-815e-6d382a19be8b" name="void setSide" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b25a058a-8665-4d70-8d04-e38e96829c2f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="12ef82cc-dc31-4c98-ad98-86d4a2b1b7ac" name="double side" direction="In" isUnique="false">
+                  <elementDefinition Id="896b8f9f-2bfb-471a-bdee-23f0b53b4752" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0e3ef2ed-56a8-4dce-b9de-57ea4875d8f6" name="double getY" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="90a360a6-83f0-40b8-9ebc-91425ad56ca3" />
+          </operation>
+          <operation Id="6c96b2e3-a831-4e62-8242-4583a40e96f7" name="void setY" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c3001b0f-451c-470a-ad6f-acc2782b2a22" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4a24a800-569d-45fa-835a-68044fc561c7" name="int y" direction="In" isUnique="false">
+                  <elementDefinition Id="f97aa52d-6f39-49d0-b686-d74df52aabac" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b80fa5e6-2b1a-414b-9165-ae5b4dff1bd5" name="double getX" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ff3b9973-c707-4979-8e4e-c748447f8838" />
+          </operation>
+          <operation Id="4a0386f8-8490-4153-bfd6-de4feb04c9fe" name="void setX" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f55cd8c2-c49c-4d63-9970-1fdaf3d1f4bd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4595d1a5-eaf0-4f48-bc41-eec896f581eb" name="double y" direction="In" isUnique="false">
+                  <elementDefinition Id="5dcc9d0b-25c2-4094-a1bc-e464d0a1fdcd" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b2517c4d-e299-452e-a389-4d5a2361195d" name="RegularPolygon" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="93856c07-89d0-4553-8f79-57c081174e56" />
+          </operation>
+          <operation Id="7b652765-1a11-4f48-9b62-b4916a4553f2" name="RegularPolygon" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="56cc59ec-1957-4069-9b35-b6726526b24c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="033ba9c1-2bb0-4465-b46b-84ccc5eb7cda" name="double side" direction="In" isUnique="false">
+                  <elementDefinition Id="2856caff-6892-4ef2-8656-5d5947d81802" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f43eb0e5-22be-40bc-bfcd-7f8625d8c557" name="int n" direction="In" isUnique="false">
+                  <elementDefinition Id="411df526-5897-4a5b-a2ab-e64d220ddb6c" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="55bbccde-8191-49f4-b69a-50054ae8b899" name="double x" direction="In" isUnique="false">
+                  <elementDefinition Id="239245c6-750a-4af5-9544-ea9d35782114" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2b76db49-5e2e-4df5-b5b4-e19d016b5fa3" name="double y" direction="In" isUnique="false">
+                  <elementDefinition Id="94ac3d4f-6d7b-4a21-b961-a578a777b0b8" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="14387b0f-7471-4354-aa92-55044dc0455c" name="RegularPolygon" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="297a141b-2e29-40a1-a166-083c3dfd8b7d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c674b9ff-b140-48f1-8125-be325aea8b3a" name="int n" direction="In" isUnique="false">
+                  <elementDefinition Id="9811bc3f-822e-4f6c-a9e4-84916fcfa8e0" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e1717320-3950-4feb-a9ba-7977efda5d8e" name="double side" direction="In" isUnique="false">
+                  <elementDefinition Id="786f2486-8b66-4021-a007-45250c20040a" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="60b094e4-b2a3-4be7-9be5-2d096c793daf" name="ModelingProject1">
+    <elementDefinition Id="95b99dba-7d6f-4e9a-9ec8-ebfde4f5f598" />
+  </package>
+</logicalClassDesignerModel>
