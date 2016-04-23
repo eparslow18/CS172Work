@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="400161a9-5362-4d88-89d7-c2c76858994d" name="UMLClassDiagram1" linkedPackageId="6eef3231-64c7-47a6-8e58-cba6be1093cc" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="12085c13-3b0e-4af3-bd7b-fc4f1986272b">
+      <profileInstance Id="74707191-dcca-49bc-be9e-5ef81ffcca12" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="cd6c2f42-78a9-4127-a783-93ed6621dd8c">
+      <profileInstance Id="edd1323f-e00a-4b38-a691-205c5a52dbcb" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2b6c7138-4c2a-4ece-842e-e3235f7bc4c0" name="vector &lt;vectorTemplate&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a1f4a18e-c734-4515-af41-2e7fb67e121f" />
+        <ownedAttributesInternal>
+          <property Id="8a62f065-ffcf-4317-bb7d-7d38a6e54ccd" name="Attribute1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7400aa87-ede7-4d3c-b835-120623c46f59" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="6eef3231-64c7-47a6-8e58-cba6be1093cc" name="vector_elementType">
+    <elementDefinition Id="9187a1f8-2860-42fc-9b7f-697915789b84" />
+  </package>
+</logicalClassDesignerModel>
